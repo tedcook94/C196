@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">WGU Term Tracker</string>
+    <string name="title_activity_main">WGU Term Tracker</string>
+    <string name="no_active_term_set">No active term has been set. Set an active term from any term page.</string>
+    <string name="start_date">Start Date:  </string>
+    <string name="end_date">End Date: </string>
+    <string name="classes">Classes</string>
+    <string name="view_term">View Term</string>
+    <string name="create_sample_data">Create sample data</string>
+    <string name="create_test_alarm">Create test alarm</string>
+    <string name="delete_all_terms">Delete all terms</string>
+    <string name="mark_term_active">Mark term active</string>
+    <string name="edit_term">Edit term</string>
+    <string name="delete_term">Delete term</string>
+    <string name="term_marked_active">This term has been marked as active</string>
+    <string name="term_deleted">Term deleted</string>
+    <string name="need_to_remove_courses">This term still contains courses. Remove all courses before deleting the
+        term.
+    </string>
+    <string name="confirm_delete_term">Are you sure you want to delete this term?</string>
+    <string name="term_name">Term Name: </string>
+    <string name="save_term">Save Term</string>
+    <string name="add_new_term">Add New Term</string>
+    <string name="edit_term_title">Edit Term</string>
+    <string name="term_saved">Term Saved</string>
+    <string name="term_updated">Term Updated</string>
+    <string name="long_test_note">Designing Effective Navigation\n\n
+        Get started\n\n
+        Dependencies and prerequisites\n\n
+        This class is not specific to any particular version of the Android platform. It is also primarily design-focused and does not require knowledge of the Android SDK. That said, you should have experience using an Android device for a better understanding of the context in which Android applications run.\n\n
+
+        You should also have basic familiarity with the Action Bar (pattern docs at Android Design), used across most applications in devices running Android 3.0 and later.\n\n
+
+        One of the very first steps to designing and developing an Android application is to determine what users are able to see and do with the app. Once you know what kinds of data users are interacting with in the app, the next step is to design the interactions that allow users to navigate across, into, and back out from the different pieces of content within the app.\n\n
+
+        This class shows you how to plan out the high-level screen hierarchy for your application and then choose appropriate forms of navigation to allow users to effectively and intuitively traverse your content. Each lesson covers various stages in the interaction design process for navigation in Android applications, in roughly chronological order. After going through the lessons in this class, you should be able to apply the methodology and navigation paradigms outlined here to your own applications, providing a coherent navigation experience for your users.\n\n
+
+        Lessons\n\n
+        Planning Screens and Their Relationships\n\n
+        Learn how to choose which screens your application should contain. Also learn how to choose which screens should be directly reachable from others. This lesson introduces a hypothetical news application to serve as an example for later lessons.\n\n
+        Planning for Multiple Touchscreen Sizes\n\n
+        Learn how to group related screens together on larger-screen devices to optimize use of available screen space.\n\n
+        Providing Descendant and Lateral Navigation\n\n
+        Learn about techniques for allowing users to navigate deep into, as well as across, your content hierarchy. Also learn about pros and cons of, and best practices for, specific navigational UI elements for various situations.\n\n
+        Providing Ancestral and Temporal Navigation\n\n
+        Learn how to allow users to navigate upwards in the content hierarchy. Also learn about best practices for the Back button and temporal navigation, or navigation to previous screens that may not be hierarchically related.\n\n
+        Putting it All Together: Wireframing the Example App\n\n
+        Learn how to create screen wireframes (low-fidelity graphic mockups) representing the screens in a news application based on the desired information model. These wireframes utilize navigational elements discussed in previous lessons to demonstrate intuitive and efficient navigation.</string>
+    <string name="all_terms_deleted">All terms have been deleted</string>
+    <string name="confirm_delete_all_terms">Are you sure you want to delete all terms?</string>
+    <string name="test_alarm">Test alarm has been set for 5 seconds from now</string>
+    <string name="notes">Notes</string>
+    <string name="edit_course">Edit course</string>
+    <string name="delete_course">Delete course</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="disable_notifications">Disable notifications</string>
+    <string name="start_course">Start course</string>
+    <string name="mark_course_completed">Mark course completed</string>
+    <string name="drop_course">Drop course</string>
+    <string name="course_deleted">Course deleted</string>
+    <string name="confirm_delete_course">Are you sure you want to delete this course?</string>
+    <string name="add_new_course">Add New Course</string>
+    <string name="edit_course_title">Edit Course</string>
+    <string name="course_name">Course Name:</string>
+    <string name="course_start">Course Start:</string>
+    <string name="course_end">Course End:</string>
+    <string name="course_mentor">Course Mentor:</string>
+    <string name="course_mentor_phone">Course Mentor Phone:</string>
+    <string name="course_mentor_email">Course Mentor Email:</string>
+    <string name="save_course">Save Course</string>
+    <string name="courses">Courses</string>
+    <string name="enter_new_note">Enter New Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="note_text_hint">Enter note text here...</string>
+    <string name="save_note">Save Note</string>
+    <string name="view_course_note">View Course Note</string>
+    <string name="view_images">View Images</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_picture_from_camera">Add picture from camera</string>
+    <string name="delete_note">Delete note</string>
+    <string name="share">Share...</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="confirm_delete_note">Confirm Delete Note</string>
+    <string name="delete_assessment">Delete assessment</string>
+    <string name="assessment_deleted">Assessment deleted</string>
+    <string name="confirm_delete_assessment">Are you sure you want to delete this assessment?</string>
+    <string name="new_assessment">New Assessment</string>
+    <string name="edit_assessment">Edit Assessment</string>
+    <string name="save_assessment">Save Assessment</string>
+    <string name="view_assessment_note">View Assessment Note</string>
+    <string name="current_term">Current Term</string>
+    <string name="view_all_terms">View All Terms</string>
+    <string name="term_list">Term List</string>
+    <string name="term_viewer">Term Viewer</string>
+    <string name="term_editor">Term Editor</string>
+    <string name="course_list">Course List</string>
+    <string name="course_viewer">Course Viewer</string>
+    <string name="course_editor">Course Editor</string>
+    <string name="course_note_list">Course Note List</string>
+    <string name="assessment_list">Assessment List</string>
+    <string name="assessment_viewer">Assessment Viewer</string>
+    <string name="course_note_viewer">Course Note Viewer</string>
+    <string name="assessment_note_list">Assessment Note List</string>
+    <string name="assessment_note_viewer">Assessment Note Viewer</string>
+    <string name="assessment_editor">Assessment Editor</string>
+    <string name="course_note_editor">Course Note Editor</string>
+    <string name="assessment_note_editor">Assessment Note Editor</string>
+    <string name="camera_activity">Camera Activity</string>
+    <string name="image_list">Image List</string>
+    <string name="code">Code</string>
+    <string name="name">Name</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="description">Description</string>
+    <string name="title_activity_image_viewer">ImageViewerActivity</string>
+</resources>

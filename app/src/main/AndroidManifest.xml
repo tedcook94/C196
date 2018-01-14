@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tk.tedcook.wgutermtracker">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/calendar_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Database Provider -->
+        <provider
+            android:name=".DataProvider"
+            android:authorities="tk.tedcook.wgutermtracker.dataprovider"
+            android:exported="false" />
+        <!-- Image File Provider -->
+        <provider
+            android:name=".ImageFileProvider"
+            android:authorities="${applicationId}.tk.tedcook.wgutermtracker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- Alarm Provider -->
+        <receiver android:name=".AlarmHandler" />
+
+        <!-- Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermListActivity"
+            android:label="@string/term_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TermViewerActivity"
+            android:label="@string/term_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.TermListActivity" />
+        </activity>
+        <activity
+            android:name=".TermEditorActivity"
+            android:label="@string/term_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.TermViewerActivity" />
+        </activity>
+        <activity
+            android:name=".CourseListActivity"
+            android:label="@string/course_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.TermViewerActivity" />
+        </activity>
+        <activity
+            android:name=".CourseViewerActivity"
+            android:label="@string/course_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.CourseListActivity" />
+        </activity>
+        <activity
+            android:name=".CourseEditorActivity"
+            android:label="@string/course_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.CourseViewerActivity" />
+        </activity>
+        <activity
+            android:name=".CourseNoteListActivity"
+            android:label="@string/course_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.CourseViewerActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentListActivity"
+            android:label="@string/assessment_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.CourseViewerActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentViewerActivity"
+            android:label="@string/assessment_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.AssessmentListActivity" />
+        </activity>
+        <activity
+            android:name=".CourseNoteViewerActivity"
+            android:label="@string/course_note_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.CourseNoteListActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentNoteListActivity"
+            android:label="@string/assessment_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.AssessmentViewerActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentNoteViewerActivity"
+            android:label="@string/assessment_note_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.AssessmentNoteListActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentEditorActivity"
+            android:label="@string/assessment_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.AssessmentViewerActivity" />
+        </activity>
+        <activity
+            android:name=".CourseNoteEditorActivity"
+            android:label="@string/course_note_editor"
+            android:parentActivityName=".CourseNoteListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.CourseNoteListActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentNoteEditorActivity"
+            android:label="@string/assessment_note_editor"
+            android:parentActivityName=".AssessmentNoteListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tk.tedcook.wgutermtracker.AssessmentNoteListActivity" />
+        </activity>
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/camera_activity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImageListActivity"
+            android:label="@string/image_list"
+            android:parentActivityName=".CourseNoteViewerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

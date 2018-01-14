@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".CourseViewerActivity">
+    <item
+            android:id="@+id/action_edit_course"
+            android:orderInCategory="99"
+            android:title="@string/edit_course"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/action_delete_course"
+            android:orderInCategory="100"
+            android:title="@string/delete_course"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/action_enable_notifications"
+            android:orderInCategory="101"
+            android:title="@string/enable_notifications"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/action_disable_notifications"
+            android:orderInCategory="102"
+            android:title="@string/disable_notifications"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/action_start_course"
+            android:orderInCategory="103"
+            android:title="@string/start_course"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/action_mark_course_completed"
+            android:orderInCategory="104"
+            android:title="@string/mark_course_completed"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/action_drop_course"
+            android:orderInCategory="105"
+            android:title="@string/drop_course"
+            app:showAsAction="never" />
+
+</menu>

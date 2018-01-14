@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="tk.tedcook.wgutermtracker.CourseViewerActivity"
+                tools:showIn="@layout/activity_course_viewer">
+
+    <TextView
+            android:id="@+id/tvCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Course Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+            android:id="@+id/tvCourseStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvCourseName"
+            android:text="Start Date" />
+
+    <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseName"
+            android:layout_toEndOf="@+id/tvCourseStart"
+            android:layout_toRightOf="@+id/tvCourseStart"
+            android:text=" - " />
+
+    <TextView
+            android:id="@+id/tvCourseEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseName"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_toRightOf="@+id/textView11"
+            android:text="End Date" />
+
+    <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseStart"
+            android:text="Planned" />
+
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvStatus">
+
+
+        <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="134dp"
+                android:layout_height="125dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:onClick="openClassNotesList"
+                android:padding="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_comment_text_outline_black_36dp" />
+
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="8dp"
+                android:layout_row="1"
+                android:onClick="openClassNotesList"
+                android:text="@string/notes"
+                android:textSize="16sp" />
+
+        <ImageButton
+                android:layout_width="133dp"
+                android:layout_height="124dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:onClick="openAssessments"
+                android:padding="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_query_builder_black_24dp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+                android:layout_row="1"
+                android:onClick="openAssessments"
+                android:text="Assessments"
+                android:textSize="16sp" />
+    </GridLayout>
+
+</RelativeLayout>
